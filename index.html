@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saga Marvel & Disney - A Locadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <h1>Locadora Marvel & Disney</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="#share">Compartilhar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main-container">
+    <aside id="sidebar">
+      <h2>Filmes</h2>
+      <nav class="movie-list-nav">
+        <ol>
+          <!-- Marvel -->
+          <li><a href="#filme1">1. Homem de Ferro (2008)</a></li>
+          <li><a href="#filme2">2. O Incrível Hulk (2008)</a></li>
+          <li><a href="#filme3">3. Thor (2011)</a></li>
+          <li><a href="#filme4">4. Capitão América: O Primeiro Vingador (2011)</a></li>
+          <li><a href="#filme5">5. Os Vingadores (2012)</a></li>
+          <li><a href="#filme6">6. Guardiões da Galáxia (2014)</a></li>
+          <li><a href="#filme7">7. Pantera Negra (2018)</a></li>
+          <li><a href="#filme8">8. Doutor Estranho (2016)</a></li>
+          <li><a href="#filme9">9. Capitã Marvel (2019)</a></li>
+          <li><a href="#filme10">10. Vingadores: Ultimato (2019)</a></li>
+
+          <!-- Disney -->
+          <li><a href="#filme11">11. O Rei Leão (1994)</a></li>
+          <li><a href="#filme12">12. Aladdin (1992)</a></li>
+          <li><a href="#filme13">13. A Bela e a Fera (1991)</a></li>
+          <li><a href="#filme14">14. Frozen (2013)</a></li>
+          <li><a href="#filme15">15. Moana (2016)</a></li>
+          <li><a href="#filme16">16. Enrolados (2010)</a></li>
+          <li><a href="#filme17">17. Zootopia (2016)</a></li>
+          <li><a href="#filme18">18. Divertida Mente (2015)</a></li>
+          <li><a href="#filme19">19. Procurando Nemo (2003)</a></li>
+          <li><a href="#filme20">20. Toy Story (1995)</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <main id="main-content">
+      <h2>Minha Locadora Marvel & Disney</h2>
+      <p>Clique em <b>Emprestar</b> ou <b>Vender</b> para simular cada filme.</p>
+
+      <!-- ========== MARVEL (10 FILMES) ========== -->
+      <section class="movie-ranking" id="filme1">
+        <div class="ranking-header"><h3>#1: Homem de Ferro (2008)</h3><span class="rank-number">1º</span></div>
+        <p>O filme que iniciou o MCU.</p>
+        <img src="https://m.media-amazon.com/images/I/81l9wVjqZ0L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme1','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme1','Vender')">Vender</button>
+          <p id="status-filme1">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme2">
+        <div class="ranking-header"><h3>#2: O Incrível Hulk (2008)</h3><span class="rank-number">2º</span></div>
+        <p>Bruce Banner enfrenta seu lado monstruoso.</p>
+        <img src="https://m.media-amazon.com/images/I/81n3cHDaE1L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme2','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme2','Vender')">Vender</button>
+          <p id="status-filme2">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme3">
+        <div class="ranking-header"><h3>#3: Thor (2011)</h3><span class="rank-number">3º</span></div>
+        <p>O Deus do Trovão chega à Terra.</p>
+        <img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme3','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme3','Vender')">Vender</button>
+          <p id="status-filme3">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme4">
+        <div class="ranking-header"><h3>#4: Capitão América: O Primeiro Vingador (2011)</h3><span class="rank-number">4º</span></div>
+        <p>A origem do primeiro Vingador.</p>
+        <img src="https://m.media-amazon.com/images/I/81zM2cQ7TnL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme4','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme4','Vender')">Vender</button>
+          <p id="status-filme4">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme5">
+        <div class="ranking-header"><h3>#5: Os Vingadores (2012)</h3><span class="rank-number">5º</span></div>
+        <p>Primeira reunião dos heróis.</p>
+        <img src="https://m.media-amazon.com/images/I/91Qk6SM7mPL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme5','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme5','Vender')">Vender</button>
+          <p id="status-filme5">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme6">
+        <div class="ranking-header"><h3>#6: Guardiões da Galáxia (2014)</h3><span class="rank-number">6º</span></div>
+        <p>Um grupo improvável salva a galáxia.</p>
+        <img src="https://m.media-amazon.com/images/I/91KkWf50SoL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme6','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme6','Vender')">Vender</button>
+          <p id="status-filme6">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme7">
+        <div class="ranking-header"><h3>#7: Pantera Negra (2018)</h3><span class="rank-number">7º</span></div>
+        <p>O rei de Wakanda assume seu trono.</p>
+        <img src="https://m.media-amazon.com/images/I/91yOiz4Xy-L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme7','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme7','Vender')">Vender</button>
+          <p id="status-filme7">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme8">
+        <div class="ranking-header"><h3>#8: Doutor Estranho (2016)</h3><span class="rank-number">8º</span></div>
+        <p>Stephen Strange descobre a magia.</p>
+        <img src="https://m.media-amazon.com/images/I/91PpLKkU+LL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme8','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme8','Vender')">Vender</button>
+          <p id="status-filme8">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme9">
+        <div class="ranking-header"><h3>#9: Capitã Marvel (2019)</h3><span class="rank-number">9º</span></div>
+        <p>Carol Danvers descobre seus poderes.</p>
+        <img src="https://m.media-amazon.com/images/I/91w2u2N+MEL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme9','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme9','Vender')">Vender</button>
+          <p id="status-filme9">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme10">
+        <div class="ranking-header"><h3>#10: Vingadores: Ultimato (2019)</h3><span class="rank-number">10º</span></div>
+        <p>A batalha final contra Thanos.</p>
+        <img src="https://m.media-amazon.com/images/I/91wFSx1L4aL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme10','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme10','Vender')">Vender</button>
+          <p id="status-filme10">Disponível</p>
+        </div>
+      </section>
+
+      <!-- ========== DISNEY (10 FILMES) ========== -->
+      <section class="movie-ranking" id="filme11">
+        <div class="ranking-header"><h3>#11: O Rei Leão (1994)</h3><span class="rank-number">11º</span></div>
+        <p>A jornada de Simba em busca de seu destino.</p>
+        <img src="https://m.media-amazon.com/images/I/81Jki2vHTnL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme11','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme11','Vender')">Vender</button>
+          <p id="status-filme11">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme12">
+        <div class="ranking-header"><h3>#12: Aladdin (1992)</h3><span class="rank-number">12º</span></div>
+        <p>Um jovem encontra uma lâmpada mágica.</p>
+        <img src="https://m.media-amazon.com/images/I/91ZnYVQo9bL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme12','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme12','Vender')">Vender</button>
+          <p id="status-filme12">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme13">
+        <div class="ranking-header"><h3>#13: A Bela e a Fera (1991)</h3><span class="rank-number">13º</span></div>
+        <p>Uma história de amor encantada.</p>
+        <img src="https://m.media-amazon.com/images/I/91dxTQDyM6L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme13','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme13','Vender')">Vender</button>
+          <p id="status-filme13">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme14">
+        <div class="ranking-header"><h3>#14: Frozen (2013)</h3><span class="rank-number">14º</span></div>
+        <p>A magia gelada de Elsa conquista o reino.</p>
+        <img src="https://m.media-amazon.com/images/I/91D1FzK6bCL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme14','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme14','Vender')">Vender</button>
+          <p id="status-filme14">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme15">
+        <div class="ranking-header"><h3>#15: Moana (2016)</h3><span class="rank-number">15º</span></div>
+        <p>Moana embarca em uma jornada épica pelo mar.</p>
+        <img src="https://m.media-amazon.com/images/I/91PO+PugV-L._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme15','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme15','Vender')">Vender</button>
+          <p id="status-filme15">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme16">
+        <div class="ranking-header"><h3>#16: Enrolados (2010)</h3><span class="rank-number">16º</span></div>
+        <p>Rapunzel descobre o mundo fora da torre.</p>
+        <img src="https://m.media-amazon.com/images/I/91gR8tEn9uL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme16','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme16','Vender')">Vender</button>
+          <p id="status-filme16">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme17">
+        <div class="ranking-header"><h3>#17: Zootopia (2016)</h3><span class="rank-number">17º</span></div>
+        <p>Uma cidade de animais cheia de mistérios.</p>
+        <img src="https://m.media-amazon.com/images/I/91mhRKnwDEL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme17','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme17','Vender')">Vender</button>
+          <p id="status-filme17">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme18">
+        <div class="ranking-header"><h3>#18: Divertida Mente (2015)</h3><span class="rank-number">18º</span></div>
+        <p>As emoções ganham vida.</p>
+        <img src="https://m.media-amazon.com/images/I/91ZrCg6XPiL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme18','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme18','Vender')">Vender</button>
+          <p id="status-filme18">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme19">
+        <div class="ranking-header"><h3>#19: Procurando Nemo (2003)</h3><span class="rank-number">19º</span></div>
+        <p>A busca de Marlin por seu filho Nemo.</p>
+        <img src="https://m.media-amazon.com/images/I/81FJ5Yc6XHL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme19','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme19','Vender')">Vender</button>
+          <p id="status-filme19">Disponível</p>
+        </div>
+      </section>
+
+      <section class="movie-ranking" id="filme20">
+        <div class="ranking-header"><h3>#20: Toy Story (1995)</h3><span class="rank-number">20º</span></div>
+        <p>Os brinquedos ganham vida quando ninguém está olhando.</p>
+        <img src="https://m.media-amazon.com/images/I/91asIC1fRwL._AC_SY679_.jpg" class="movie-poster">
+        <div class="locadora-actions">
+          <button onclick="simularLocacao('filme20','Emprestar')">Emprestar</button>
+          <button onclick="simularLocacao('filme20','Vender')">Vender</button>
+          <p id="status-filme20">Disponível</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>&copy; 2025 Saga Marvel & Disney - Locadora. Todos os direitos reservados.</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </main>
+  </div>
+
+</body>
+</html>
